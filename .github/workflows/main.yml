@@ -30,7 +30,7 @@ jobs:
       uses: 'azure/aci-deploy@v1'
       with:
         resource-group: ghactions
-        dns-name-label: url-for-container
+        dns-name-label: ghactionsaci
         image: ${{ env.registry-name }}/nodejssampleapp:${{ github.sha }}
         registry-username: ${{ secrets.REGISTRY_USERNAME }}
         registry-password: ${{ secrets.REGISTRY_PASSWORD }}
