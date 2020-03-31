@@ -32,6 +32,7 @@ jobs:
         resource-group: ghactions
         dns-name-label: ghactionsaci
         image: ${{ env.registry-name }}/nodejssampleapp:${{ github.sha }}
+        registry-login-server: ${{ env.registry-name }}
         registry-username: ${{ secrets.REGISTRY_USERNAME }}
         registry-password: ${{ secrets.REGISTRY_PASSWORD }}
         name: contoso-container
